@@ -1,0 +1,9 @@
+<h2><%= @task.title %></h2>
+
+<p><%= @task.details %></p>
+<p><i class="far
+      <%= @task.completed? ? 'fa-thumbs-up' : 'fa-thumbs-down'%>">
+    </i>
+</p>
+
+<%= link_to 'Back to list', tasks_path %>
